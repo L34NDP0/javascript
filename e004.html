@@ -5,24 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 <body>
-    
-        <script>
-            // strong é negrito
-            // <br/> é quebra de linhas. 
-            // o length conta os caracteres
-            // toUpperCase deixa os caracteres em maisculos
-            //toLowerCase deixa os caracteres em minusculas
-            var nome = window.prompt('Qual o seu nome?')
-            document.write('Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.'<br/>) 
-            document.write('Seu nome em maiscúlas é ${nome.toUpperCase()}'<br/>)
-            document.write('Seu nome em minusculas é ${nome.toLowerCase()}')
-        </script>
+    <h1>Hello</h1>
 
+    <script>
+        //comando length conta os caracteres
+        // toLoweCase mostra o nome em minusculas e toUpperCase em maiusculas
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write('Olá, ' + nome + ' seu nome tem ' + nome.length + ' letras.')
+        document.write(' Seu nome em minusculas é ' + nome.toLowerCase())
+        document.write(' Seu nome em maiusculas é ' + nome.toUpperCase())
+    </script>
 </body>
-</html> 
 
-
-
+</html>
