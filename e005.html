@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background: rgb(47, 47, 184);
+            color: aliceblue;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando DOM Document Object Model</h1> 
+    <p>Aqui tem o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        // buscando uma tag especifica por nome no codigo com o getElements name, Tagname, classByname no plural precisa declarar o numero do paragrafo.  
+        //Posso alterar a cor do paragrafo e do body dentro do js.
+        // Posso mudar as escritas também por exemplo d.innerText ali
+        // o comando innerText mostra o texto formatado, o innerHTML mostra as tags e tudo
+        // com o getelementById, nao precisa colocar em []  
+        //Busca com o querySelector, busca pela # que indica id e . indica class
+
+        var corpo = window.document. body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*var d = window.document.getElementById('msg')
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML)
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.querySelector('div#msg')
+       d.style.background = 'blue'
+
+    </script>
+</body>
+</html>
